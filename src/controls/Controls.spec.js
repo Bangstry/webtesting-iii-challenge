@@ -7,7 +7,7 @@ import Controls from './Controls';
 
 
     test("== snapshot", () => {
-      const tree = renderer.create(<Controls />); 
+      const tree = render(<Controls />); 
 
       expect(tree.toJSON()).toMatchSnapshot();
     });

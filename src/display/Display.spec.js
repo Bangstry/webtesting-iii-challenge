@@ -5,7 +5,7 @@ import Display from "./Display";
 
 
   test("== snapshot", () => {
-    const tree = renderer.create(<Display />);
+    const tree = render(<Display locked={true} closed={true} />);
 
     expect(tree.toJSON()).toMatchSnapshot();
   });
